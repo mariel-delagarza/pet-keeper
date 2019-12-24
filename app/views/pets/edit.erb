@@ -1,0 +1,18 @@
+<h1>This page will let you update your pet's profile</h1>
+
+<form action="/pets/<%=@pet.id%>" method="post">
+<input type="hidden" name="_method" value="patch">
+
+    <p>Here you can edit the profile for <%=@pet.name%></p>
+
+    <p><label for="name">Name:</label>
+    <input type="text" id="name" value="<%=@pet.name%>" name="name"></p>
+
+    <p><label for="species">Species:</label>
+    <input type="text" id="species" value="<%=@pet.species%>" name="species"></p>
+
+    <p><input type="submit" value="submit"></p>
+</form>
+
+<p><a href="/">Back to the main page</a></p>
+<p><a href="/pets">See all of your pets!</a></p>
