@@ -1,5 +1,5 @@
 <h1>Your Pets</h1>
 
-<% @pets.each do |pet %>
-  <p>Name: <a href = "/pets/<%= pet.id %>"><%=pet.name%></a></p>
+<% @pets.each do |pet| %>
+  <p><a href = "/pets/<%= pet.id %>"><%=pet.name%></a></p>
 <%end%>
